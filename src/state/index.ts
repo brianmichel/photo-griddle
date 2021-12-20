@@ -5,12 +5,12 @@ export default reactive({
   photos: new Array<Photo>(),
   async loadPhotos() {
     for (let index = 0; index < 25; index++) {
-      const element = { filename: "test-photo", url: this.randomTestBook() };
+      const element = { filename: "test-photo", url: this.randomTestPhoto() };
       this.photos.push(element);
     }
   },
 
-  randomTestBook(): string {
+  randomTestPhoto(): string {
     const urls = [
       "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05611_lbwtmk.jpg",
       "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg",

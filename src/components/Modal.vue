@@ -16,16 +16,14 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  /* backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
+  width: 75%;
+  max-width: 75%;
+  margin: auto;
 }
 </style>
