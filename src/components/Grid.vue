@@ -60,18 +60,20 @@ export default defineComponent({
 
 <style scoped lang="scss">
 /// BASIC
+/// From @maxvoltar https://codepen.io/maxvoltar/pen/eYOPdMG?editors=1010
 
 ul {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
+  padding: 0px;
 }
 
 li {
   height: 40vh;
   flex-grow: 1;
-  padding: 10px;
+  padding: 1px;
 }
 
 li:last-child {
