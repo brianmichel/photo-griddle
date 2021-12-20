@@ -2,19 +2,43 @@
   <div>
     <ul>
       <li v-for="image in images" :key="image.url">
-        <img :src="image.url" loading="lazy" />
+        <router-link :to="{ name: 'detail', params: { photoKey: image.url } }">
+          <img :src="image.url" loading="lazy" />
+        </router-link>
       </li>
     </ul>
+
+    <router-view>
+      <Modal v-if="showModal" @click="$router.go(-1)">
+        <Detail />
+      </Modal>
+    </router-view>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Detail from "@/components/Detail.vue";
+import Modal from "@/components/Modal.vue";
 
 export default defineComponent({
   name: "Grid",
   props: {
     images: [],
+  },
+  components: {
+    Detail,
+    Modal,
+  },
+  watch: {
+    $route(newVal, oldVal) {
+      this.showModal = newVal.meta && newVal.meta.showModal;
+    },
+  },
+  data() {
+    return {
+      showModal: false,
+    };
   },
 });
 </script>

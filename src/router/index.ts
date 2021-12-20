@@ -4,14 +4,20 @@ import Detail from "@/components/Detail.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: Home,
-  },
-  {
-    path: "/:photoKey",
-    name: "Detail",
-    component: Detail,
+    children: [
+      {
+        path: "/d/:photoKey",
+        name: "detail",
+        component: Detail,
+        props: true,
+        meta: {
+          showModal: true,
+        },
+      },
+    ],
   },
 ];
 
