@@ -1,15 +1,16 @@
 <template>
-  <Grid placeholder="Hello World" />
+  <Home />
+  <router-view />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Grid from "./components/Grid.vue";
+import Home from "./components/Home.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    Grid,
+    Home,
   },
 });
 </script>
