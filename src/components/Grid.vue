@@ -1,8 +1,8 @@
 <template>
   <div>
     <ul>
-      <li v-for="photo in testData().photos" :key="photo.url">
-        <img :src="photo.url" loading="lazy" />
+      <li v-for="image in images" :key="image.url">
+        <img :src="image.url" loading="lazy" />
       </li>
     </ul>
   </div>
@@ -14,46 +14,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "Grid",
   props: {
-    placeholder: String,
     images: [],
-  },
-  methods: {
-    testData() {
-      return {
-        photos: [
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05611_lbwtmk.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05465_dtkwef.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05501_yirmq8.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05624_f5b2ud.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05623_dcpfva.jpg",
-          },
-          {
-            url: "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05476_dlkjza.jpg",
-          },
-        ],
-      };
-    },
   },
 });
 </script>

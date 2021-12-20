@@ -1,15 +1,25 @@
 <template>
-  <Grid placeholder="Hello World" />
+  <Grid :images="state.photos" />
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, onMounted } from "vue";
 import Grid from "@/components/Grid.vue";
+import state from "@/state";
 
 export default defineComponent({
   name: "Home",
   components: {
     Grid,
+  },
+  setup() {
+    onMounted(async () => {
+      if (state.photos.length === 0) state.loadPhotos();
+    });
+
+    return {
+      state,
+    };
   },
 });
 </script>
