@@ -1,6 +1,6 @@
 <template>
   <div class="media-container">
-    <img :src="$route.params.photoKey" />
+    <img :src="$route.params.name" />
     <div class="metadata">
       <p>metadata goes here</p>
     </div>

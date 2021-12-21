@@ -2,7 +2,9 @@
   <div>
     <ul>
       <li v-for="image in images" :key="image.url">
-        <router-link :to="{ name: 'detail', params: { photoKey: image.url } }">
+        <router-link
+          :to="{ name: 'detail', params: { filename: image.filename } }"
+        >
           <img :src="image.url" loading="lazy" />
         </router-link>
       </li>
@@ -24,14 +26,14 @@ import Modal from "@/components/Modal.vue";
 export default defineComponent({
   name: "Grid",
   props: {
-    images: [],
+    images: Array,
   },
   components: {
     Detail,
     Modal,
   },
   watch: {
-    $route(newVal, oldVal) {
+    $route(newVal) {
       this.showModal = newVal.meta && newVal.meta.showModal;
     },
   },

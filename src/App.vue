@@ -3,13 +3,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, onMounted } from "vue";
 import Home from "./components/Home.vue";
+import store from "@/store";
 
 export default defineComponent({
+  provide() {
+    return {
+      store: store,
+    };
+  },
   name: "App",
   components: {
     Home,
+  },
+  setup() {
+    onMounted(async () => {
+      store.loadPhotos();
+    });
   },
 });
 </script>

@@ -3,10 +3,14 @@ import { Photo } from "@/models/Photo";
 
 export default reactive({
   photos: new Array<Photo>(),
+  isLoaded: false,
   async loadPhotos() {
-    for (let index = 0; index < 25; index++) {
-      const element = { filename: "test-photo", url: this.randomTestPhoto() };
-      this.photos.push(element);
+    if (!this.isLoaded) {
+      for (let index = 0; index < 25; index++) {
+        const element = { filename: "test-photo", url: this.randomTestPhoto() };
+        this.photos.push(element);
+      }
+      this.isLoaded = true;
     }
   },
 

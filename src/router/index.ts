@@ -4,12 +4,12 @@ import Detail from "@/components/Detail.vue";
 
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "Home",
     component: Home,
     children: [
       {
-        path: "/d/:photoKey",
+        path: "/d/:filename",
         name: "detail",
         component: Detail,
         props: true,
