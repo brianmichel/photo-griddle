@@ -55,6 +55,7 @@ ul {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 }
 
 li {

@@ -26,11 +26,16 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+html,
 body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #a857df;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {

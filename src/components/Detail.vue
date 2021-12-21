@@ -1,22 +1,30 @@
 <template>
   <div class="media-container">
-    <img :src="$route.params.name" />
+    <img :src="this.details.url" />
     <div class="metadata">
-      <p>metadata goes here</p>
+      <p class="item">{{ this.details.shutter }} seconds</p>
+      <p class="item">ƒ/{{ this.details.aperture }}</p>
+      <p class="item">ISO {{ this.details.iso }}</p>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Detail",
+  inject: ['store'],
+  computed: {
+    details() {
+      return this.store.detailForPhoto(this.$route.params.name);
+    },
+  },
   components: {},
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .media-container {
   display: flex;
   flex-direction: column;
@@ -35,8 +43,36 @@ img {
 
 .metadata {
   width: 50%;
+  display: flex;
   max-width: 75vh;
-  background-color: white;
   margin-top: 2vh;
+  font-family: monospace;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1vh;
+  -webkit-backdrop-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  backdrop-filter: blur(5px);
+
+  .item {
+    color: #f2c53d;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .metadata {
+    width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .metadata {
+    background-color: rgba(49, 49, 49, 0.308);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .metadata {
+    background-color: rgba(255, 255, 255, 0.308);
+  }
 }
 </style>

@@ -13,7 +13,14 @@ export default reactive({
       this.isLoaded = true;
     }
   },
-
+  detailForPhoto(fileName: string) {
+    return {
+      shutter: 0.25,
+      aperture: 5.6,
+      iso: 100,
+      url: this.randomTestPhoto(),
+    };
+  },
   randomTestPhoto(): string {
     const urls = [
       "https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05611_lbwtmk.jpg",

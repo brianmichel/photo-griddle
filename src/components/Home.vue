@@ -1,9 +1,11 @@
 <template>
-  <Grid :images="this.store.photos" />
+  <div class="home">
+    <Grid :images="this.store.photos" />
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import Grid from "@/components/Grid.vue";
 
 export default defineComponent({
@@ -15,4 +17,9 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.home {
+  height: 100%;
+  width: 100%;
+}
+</style>
