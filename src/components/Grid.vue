@@ -5,7 +5,7 @@
         <router-link
           :to="{ name: 'detail', params: { filename: image.filename } }"
         >
-          <img :src="image.url" loading="lazy" />
+          <img :src="'/media/' + image.name + '_thumb.jpg'" loading="lazy" />
         </router-link>
       </li>
     </ul>

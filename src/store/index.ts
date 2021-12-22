@@ -1,15 +1,24 @@
 import { reactive } from "vue";
 import { Photo } from "@/models/Photo";
+import manifest from "@/assets/manifest.json"
 
 export default reactive({
   photos: new Array<Photo>(),
   isLoaded: false,
   async loadPhotos() {
     if (!this.isLoaded) {
-      for (let index = 0; index < 25; index++) {
-        const element = { filename: "test-photo", url: this.randomTestPhoto() };
-        this.photos.push(element);
+
+      console.log(manifest)
+
+      for (const photo of manifest.photos) {
+        console.log(photo)
+        this.photos.push(photo)
       }
+
+      // for (let index = 0; index < 25; index++) {
+      //   const element = { filename: "test-photo", url: this.randomTestPhoto() };
+      //   this.photos.push(element);
+      // }
       this.isLoaded = true;
     }
   },

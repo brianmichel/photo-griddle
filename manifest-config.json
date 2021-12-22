@@ -1,0 +1,5 @@
+{
+  "input-directory": "/Users/brianmichel/Desktop/photos",
+  "output-directory": "./public/media",
+  "generate-dominant-color": false
+}

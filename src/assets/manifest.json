@@ -1,0 +1,1680 @@
+{
+  "generated": 1640207289899,
+  "version": 1,
+  "photos": [
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-11T17:30:11.000Z",
+        "shutter": 0.004,
+        "aperture": 4,
+        "iso": 160
+      },
+      "name": "001",
+      "filename": "001.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-11T19:06:05.000Z",
+        "shutter": 0.004,
+        "aperture": 4,
+        "iso": 1600
+      },
+      "name": "002",
+      "filename": "002.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-16T18:42:27.000Z",
+        "shutter": 0.004,
+        "aperture": 2.8,
+        "iso": 6400
+      },
+      "name": "003",
+      "filename": "003.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-16T18:43:28.000Z",
+        "shutter": 0.004,
+        "aperture": 2.8,
+        "iso": 5000
+      },
+      "name": "004",
+      "filename": "004.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-16T19:07:30.000Z",
+        "shutter": 0.004,
+        "aperture": 6.3,
+        "iso": 200
+      },
+      "name": "005",
+      "filename": "005.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-19T20:41:08.000Z",
+        "shutter": 0.004,
+        "aperture": 4,
+        "iso": 8000
+      },
+      "name": "006",
+      "filename": "006.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-19T20:43:43.000Z",
+        "shutter": 0.004,
+        "aperture": 2.8,
+        "iso": 6400
+      },
+      "name": "007",
+      "filename": "007.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-19T20:50:51.000Z",
+        "shutter": 0.004,
+        "aperture": 2.8,
+        "iso": 8000
+      },
+      "name": "008",
+      "filename": "008.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-20T13:58:40.000Z",
+        "shutter": 0.001,
+        "aperture": 4,
+        "iso": 200
+      },
+      "name": "009",
+      "filename": "009.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-20T13:59:22.000Z",
+        "shutter": 0.0005,
+        "aperture": 4,
+        "iso": 200
+      },
+      "name": "010",
+      "filename": "010.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-20T14:01:28.000Z",
+        "shutter": 0.0005,
+        "aperture": 3.2,
+        "iso": 200
+      },
+      "name": "011",
+      "filename": "011.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-20T14:11:04.000Z",
+        "shutter": 0.002,
+        "aperture": 4,
+        "iso": 200
+      },
+      "name": "012",
+      "filename": "012.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-23T12:53:30.000Z",
+        "shutter": 0.004,
+        "aperture": 8,
+        "iso": 320
+      },
+      "name": "013",
+      "filename": "013.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-23T12:55:56.000Z",
+        "shutter": 0.00125,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "014",
+      "filename": "014.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-23T12:56:49.000Z",
+        "shutter": 0.0005,
+        "aperture": 2.8,
+        "iso": 100
+      },
+      "name": "015",
+      "filename": "015.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-27T12:39:27.000Z",
+        "shutter": 0.0025,
+        "aperture": 3.5,
+        "iso": 320
+      },
+      "name": "016",
+      "filename": "016.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-27T12:41:03.000Z",
+        "shutter": 0.0025,
+        "aperture": 4.5,
+        "iso": 100
+      },
+      "name": "017",
+      "filename": "017.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-27T12:42:23.000Z",
+        "shutter": 0.0025,
+        "aperture": 4.5,
+        "iso": 320
+      },
+      "name": "018",
+      "filename": "018.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-27T12:48:38.000Z",
+        "shutter": 0.0015625,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "019",
+      "filename": "019.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-07-27T13:05:58.000Z",
+        "shutter": 0.0025,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "020",
+      "filename": "020.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-07-28T15:52:17.000Z",
+        "shutter": 0.0003125,
+        "aperture": 1.7,
+        "iso": 100
+      },
+      "name": "021",
+      "filename": "021.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Digital Link",
+        "created": "2021-03-26T14:22:56.000Z"
+      },
+      "name": "0216800_0216800-R1-E006",
+      "filename": "0216800_0216800-R1-E006.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Digital Link",
+        "created": "2015-11-17T14:22:45.000Z"
+      },
+      "name": "0216900_0216900-R1-E010",
+      "filename": "0216900_0216900-R1-E010.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Digital Link",
+        "created": "2015-11-17T14:22:47.000Z"
+      },
+      "name": "0216900_0216900-R1-E012",
+      "filename": "0216900_0216900-R1-E012.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Digital Link",
+        "created": "2021-03-26T14:23:28.000Z"
+      },
+      "name": "0217100_0217100-R1-E005",
+      "filename": "0217100_0217100-R1-E005.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Digital Link",
+        "created": "2021-03-26T14:23:31.000Z"
+      },
+      "name": "0217100_0217100-R1-E006",
+      "filename": "0217100_0217100-R1-E006.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-07-28T15:39:43.000Z",
+        "shutter": 0.0001,
+        "aperture": 2,
+        "iso": 100
+      },
+      "name": "022",
+      "filename": "022.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-07-29T21:27:32.000Z",
+        "shutter": 0.016666666666666666,
+        "aperture": 4,
+        "iso": 3200
+      },
+      "name": "023",
+      "filename": "023.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-07-31T15:21:54.000Z",
+        "shutter": 0.000625,
+        "aperture": 1.7,
+        "iso": 100
+      },
+      "name": "024",
+      "filename": "024.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-07-31T10:03:29.000Z",
+        "shutter": 0.016666666666666666,
+        "aperture": 5,
+        "iso": 1600
+      },
+      "name": "025",
+      "filename": "025.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-02T23:45:08.000Z",
+        "shutter": 0.016666666666666666,
+        "aperture": 2.8,
+        "iso": 200
+      },
+      "name": "026",
+      "filename": "026.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-02T23:49:49.000Z",
+        "shutter": 0.03333333333333333,
+        "aperture": 2.8,
+        "iso": 320
+      },
+      "name": "027",
+      "filename": "027.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-02T23:30:51.000Z",
+        "shutter": 0.03333333333333333,
+        "aperture": 2.8,
+        "iso": 1600
+      },
+      "name": "028",
+      "filename": "028.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-08-03T15:26:17.000Z",
+        "shutter": 0.0025,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "029",
+      "filename": "029.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-07-29T18:39:21.000Z",
+        "shutter": 0.000625,
+        "aperture": 2.5,
+        "iso": 100
+      },
+      "name": "030",
+      "filename": "030.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-07-29T09:24:48.000Z",
+        "shutter": 0.001,
+        "aperture": 4,
+        "iso": 400
+      },
+      "name": "031",
+      "filename": "031.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-04T12:14:52.000Z",
+        "shutter": 0.0025,
+        "aperture": 5,
+        "iso": 200
+      },
+      "name": "032",
+      "filename": "032.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-08T10:05:59.000Z",
+        "shutter": 0.004,
+        "aperture": 4,
+        "iso": 200
+      },
+      "name": "033",
+      "filename": "033.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-09T20:29:56.000Z",
+        "shutter": 0.03333333333333333,
+        "aperture": 2.8,
+        "iso": 1250
+      },
+      "name": "034",
+      "filename": "034.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-08-10T15:10:15.000Z",
+        "shutter": 0.0015625,
+        "aperture": 1.7,
+        "iso": 100
+      },
+      "name": "035",
+      "filename": "035.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-08-10T14:28:08.000Z",
+        "shutter": 0.0005,
+        "aperture": 1.7,
+        "iso": 100
+      },
+      "name": "036",
+      "filename": "036.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-08-10T15:00:56.000Z",
+        "shutter": 0.001,
+        "aperture": 1.7,
+        "iso": 100
+      },
+      "name": "037",
+      "filename": "037.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-08-10T15:12:59.000Z",
+        "shutter": 0.0003125,
+        "aperture": 1.7,
+        "iso": 100
+      },
+      "name": "038",
+      "filename": "038.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-08T10:13:29.000Z",
+        "shutter": 0.0025,
+        "aperture": 5,
+        "iso": 200
+      },
+      "name": "039",
+      "filename": "039.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-08T10:18:40.000Z",
+        "shutter": 0.0005,
+        "aperture": 2.8,
+        "iso": 200
+      },
+      "name": "040",
+      "filename": "040.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-08-10T14:40:00.000Z",
+        "shutter": 0.025,
+        "aperture": 2.8,
+        "iso": 100
+      },
+      "name": "041",
+      "filename": "041.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-08-02T23:36:41.000Z",
+        "shutter": 0.03333333333333333,
+        "aperture": 2.8,
+        "iso": 3200
+      },
+      "name": "042",
+      "filename": "042.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-08-03T15:34:55.000Z",
+        "shutter": 0.01,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "043",
+      "filename": "043.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-04T09:49:07.000Z",
+        "shutter": 0.0015625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "044",
+      "filename": "044.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-04T09:50:14.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "045",
+      "filename": "045.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-04T19:39:25.000Z",
+        "shutter": 0.008,
+        "aperture": 5.6,
+        "iso": 3200
+      },
+      "name": "046",
+      "filename": "046.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-10T12:46:46.000Z",
+        "shutter": 0.008,
+        "aperture": 5.6,
+        "iso": 500
+      },
+      "name": "047",
+      "filename": "047.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-07T19:02:31.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 6400
+      },
+      "name": "048",
+      "filename": "048.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-07T10:36:29.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 320
+      },
+      "name": "049",
+      "filename": "049.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-05T21:59:50.000Z",
+        "shutter": 0.008,
+        "aperture": 5.6,
+        "iso": 640
+      },
+      "name": "050",
+      "filename": "050.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-14T19:26:12.000Z",
+        "shutter": 0.03333333333333333,
+        "aperture": 2.8,
+        "iso": 1250
+      },
+      "name": "051",
+      "filename": "051.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-11-16T13:52:12.000Z",
+        "shutter": 0.0015625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "052",
+      "filename": "052.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2019-11-16T16:14:58.000Z",
+        "shutter": 0.16666666666666666,
+        "aperture": 3.2,
+        "iso": 100
+      },
+      "name": "053",
+      "filename": "053.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-11-21T10:44:44.000Z",
+        "shutter": 0.001,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "054",
+      "filename": "054.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-12-23T19:15:49.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 6400
+      },
+      "name": "055",
+      "filename": "055.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2019-12-30T09:44:50.000Z",
+        "shutter": 0.008,
+        "aperture": 5.6,
+        "iso": 500
+      },
+      "name": "056",
+      "filename": "056.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-01-17T13:50:58.000Z",
+        "shutter": 0.002,
+        "aperture": 9,
+        "iso": 100
+      },
+      "name": "057",
+      "filename": "057.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-01-17T13:57:36.000Z",
+        "shutter": 0.002,
+        "aperture": 8,
+        "iso": 100
+      },
+      "name": "058",
+      "filename": "058.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-01-17T14:53:47.000Z",
+        "shutter": 0.02,
+        "aperture": 10,
+        "iso": 100
+      },
+      "name": "059",
+      "filename": "059.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-29T19:21:53.000Z",
+        "shutter": 0.0015625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "060",
+      "filename": "060.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-18T11:58:36.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 3200
+      },
+      "name": "061",
+      "filename": "061.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-14T19:51:25.000Z",
+        "shutter": 0.025,
+        "aperture": 2.8,
+        "iso": 200
+      },
+      "name": "062",
+      "filename": "062.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-14T19:50:05.000Z",
+        "shutter": 0.03333333333333333,
+        "aperture": 2.8,
+        "iso": 500
+      },
+      "name": "063",
+      "filename": "063.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-29T19:28:20.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 160
+      },
+      "name": "064",
+      "filename": "064.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-29T19:27:39.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "065",
+      "filename": "065.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-29T19:28:59.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 160
+      },
+      "name": "066",
+      "filename": "066.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-28T19:45:47.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 1250
+      },
+      "name": "067",
+      "filename": "067.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-28T19:47:13.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 6400
+      },
+      "name": "068",
+      "filename": "068.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-02-18T11:56:37.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 1000
+      },
+      "name": "069",
+      "filename": "069.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-05-18T13:00:47.000Z",
+        "shutter": 0.003125,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "070",
+      "filename": "070.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-06-08T13:33:03.000Z",
+        "shutter": 0.00625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "071",
+      "filename": "071.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-06-14T14:51:19.000Z",
+        "shutter": 0.001,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "072",
+      "filename": "072.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-06-24T10:31:45.000Z",
+        "shutter": 0.002,
+        "aperture": 6.3,
+        "iso": 100
+      },
+      "name": "073",
+      "filename": "073.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2020-06-24T10:35:04.000Z",
+        "shutter": 0.008,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "074",
+      "filename": "074.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-09-01T09:34:29.000Z",
+        "shutter": 0.00625,
+        "aperture": 5,
+        "iso": 100
+      },
+      "name": "075",
+      "filename": "075.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-09-01T09:14:53.000Z",
+        "shutter": 0.004,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "076",
+      "filename": "076.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-09-01T09:05:41.000Z",
+        "shutter": 0.00625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "077",
+      "filename": "077.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-09-01T09:31:46.000Z",
+        "shutter": 0.004,
+        "aperture": 5,
+        "iso": 100
+      },
+      "name": "078",
+      "filename": "078.jpg"
+    },
+    {
+      "exif": {
+        "camera": "LEICA Q (Typ 116)",
+        "created": "2020-09-01T09:04:25.000Z",
+        "shutter": 0.01,
+        "aperture": 2.2,
+        "iso": 100
+      },
+      "name": "079",
+      "filename": "079.jpg"
+    },
+    {
+      "exif": {
+        "camera": "CFV II 50C/500",
+        "created": "2020-10-25T08:25:30.000Z",
+        "iso": 400
+      },
+      "name": "080",
+      "filename": "080.jpg"
+    },
+    {
+      "exif": {
+        "camera": "CFV II 50C/500",
+        "created": "2020-10-25T09:30:04.000Z",
+        "iso": 200
+      },
+      "name": "081",
+      "filename": "081.jpg"
+    },
+    {
+      "exif": {
+        "camera": "CFV II 50C/907X",
+        "created": "2020-10-26T13:10:26.000Z",
+        "shutter": 0.0008,
+        "aperture": 4,
+        "iso": 800
+      },
+      "name": "082",
+      "filename": "082.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.03333333333333333,
+        "aperture": 4,
+        "iso": 800
+      },
+      "name": "083",
+      "filename": "083.jpg"
+    },
+    {
+      "exif": {
+        "camera": "CFV II 50C/907X",
+        "created": "2020-10-28T14:13:00.000Z",
+        "shutter": 0.0015625,
+        "aperture": 2.8,
+        "iso": 200
+      },
+      "name": "084",
+      "filename": "084.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.002,
+        "aperture": 9.5,
+        "iso": 200
+      },
+      "name": "085",
+      "filename": "085.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.05,
+        "aperture": 16,
+        "iso": 200
+      },
+      "name": "B0000146_11-2-20_0012",
+      "filename": "B0000146_11-2-20_0012.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.004,
+        "aperture": 6.8,
+        "iso": 200
+      },
+      "name": "B0000156_11-2-20_0002",
+      "filename": "B0000156_11-2-20_0002.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.000625,
+        "aperture": 2.8,
+        "iso": 800
+      },
+      "name": "B0000222_11-3-20_0002",
+      "filename": "B0000222_11-3-20_0002.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0015625,
+        "aperture": 6.8,
+        "iso": 800
+      },
+      "name": "B0000226_11-5-20_0026",
+      "filename": "B0000226_11-5-20_0026.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0005,
+        "aperture": 8,
+        "iso": 800
+      },
+      "name": "B0000239_11-5-20_0013",
+      "filename": "B0000239_11-5-20_0013.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0025,
+        "aperture": 3.4,
+        "iso": 200
+      },
+      "name": "B0000251_11-5-20_0001",
+      "filename": "B0000251_11-5-20_0001.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0015625,
+        "aperture": 2.8,
+        "iso": 200
+      },
+      "name": "B0000255_11-7-20_0006",
+      "filename": "B0000255_11-7-20_0006.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0125,
+        "aperture": 3.4,
+        "iso": 3200
+      },
+      "name": "B0000296_11-7-20_0016",
+      "filename": "B0000296_11-7-20_0016.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.005555555555555556,
+        "aperture": 13,
+        "iso": 800
+      },
+      "name": "B0000316_11-17-20_0009",
+      "filename": "B0000316_11-17-20_0009.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.004,
+        "aperture": 5.6,
+        "iso": 400
+      },
+      "name": "B0000318_11-17-20_0007",
+      "filename": "B0000318_11-17-20_0007.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.004,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "B0000320_11-17-20_0005",
+      "filename": "B0000320_11-17-20_0005.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": "2020-11-17T09:53:00.000Z",
+        "shutter": 0.004,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "B0000324_11-17-20_0001",
+      "filename": "B0000324_11-17-20_0001.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.003125,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "B0000350_11-26-20_0001",
+      "filename": "B0000350_11-26-20_0001.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0015625,
+        "aperture": 6.8,
+        "iso": 100
+      },
+      "name": "B0000369_11-29-20_0024",
+      "filename": "B0000369_11-29-20_0024.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.005555555555555556,
+        "aperture": 22,
+        "iso": 1600
+      },
+      "name": "B0000374_11-29-20_0019",
+      "filename": "B0000374_11-29-20_0019.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.008,
+        "aperture": 22,
+        "iso": 400
+      },
+      "name": "B0000377_11-29-20_0016",
+      "filename": "B0000377_11-29-20_0016.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.000625,
+        "aperture": 6.8,
+        "iso": 400
+      },
+      "name": "B0000404_2-25-21_0045",
+      "filename": "B0000404_2-25-21_0045.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.00125,
+        "aperture": 9.5,
+        "iso": 400
+      },
+      "name": "B0000416_2-25-21_0033",
+      "filename": "B0000416_2-25-21_0033.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.005555555555555556,
+        "aperture": 19,
+        "iso": 400
+      },
+      "name": "B0000425_2-25-21_0024",
+      "filename": "B0000425_2-25-21_0024.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.005,
+        "aperture": 19,
+        "iso": 400
+      },
+      "name": "B0000433_2-25-21_0016",
+      "filename": "B0000433_2-25-21_0016.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0013333333333333333,
+        "aperture": 19,
+        "iso": 400
+      },
+      "name": "B0000435_2-25-21_0014",
+      "filename": "B0000435_2-25-21_0014.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0008,
+        "aperture": 5.6,
+        "iso": 400
+      },
+      "name": "B0000451_3-20-21_0006",
+      "filename": "B0000451_3-20-21_0006.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.0005,
+        "aperture": 4.8,
+        "iso": 400
+      },
+      "name": "B0000454_3-20-21_0003",
+      "filename": "B0000454_3-20-21_0003.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.00625,
+        "aperture": 11,
+        "iso": 1600
+      },
+      "name": "B0000506_4-3-21_0016",
+      "filename": "B0000506_4-3-21_0016.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.00625,
+        "aperture": 9.5,
+        "iso": 400
+      },
+      "name": "B0000529_4-9-21_0008",
+      "filename": "B0000529_4-9-21_0008.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.008,
+        "aperture": 9.5,
+        "iso": 400
+      },
+      "name": "B0000531_4-9-21_0006",
+      "filename": "B0000531_4-9-21_0006.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.01,
+        "aperture": 22,
+        "iso": 1600
+      },
+      "name": "B0000539_4-9-21_0001",
+      "filename": "B0000539_4-9-21_0001.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": "2021-07-10T15:31:38.000Z",
+        "shutter": 0.005555555555555556,
+        "aperture": 13,
+        "iso": 400
+      },
+      "name": "B0000761_7-10-21",
+      "filename": "B0000761_7-10-21.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.05,
+        "aperture": 6.8,
+        "iso": 3200
+      },
+      "name": "B0000777_8-20-21",
+      "filename": "B0000777_8-20-21.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.02,
+        "aperture": 4,
+        "iso": 3200
+      },
+      "name": "B0000786_8-20-21",
+      "filename": "B0000786_8-20-21.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.005555555555555556,
+        "aperture": 11,
+        "iso": 3200
+      },
+      "name": "B0000867_10-21-21",
+      "filename": "B0000867_10-21-21.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.01,
+        "aperture": 6.8,
+        "iso": 3200
+      },
+      "name": "B0000895_10-21-21",
+      "filename": "B0000895_10-21-21.jpg"
+    },
+    {
+      "exif": {
+        "camera": "Hasselblad CFV II 50C",
+        "created": null,
+        "shutter": 0.5,
+        "iso": 100
+      },
+      "name": "B0000909_12-4-21",
+      "filename": "B0000909_12-4-21.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-02-20T17:05:05.000Z",
+        "shutter": 0.002,
+        "aperture": 8,
+        "iso": 200
+      },
+      "name": "R0002737",
+      "filename": "R0002737.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-02-24T10:03:41.000Z",
+        "shutter": 0.008,
+        "aperture": 8,
+        "iso": 640
+      },
+      "name": "R0002740",
+      "filename": "R0002740.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-05-15T10:42:33.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 2500
+      },
+      "name": "R0002915",
+      "filename": "R0002915.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-05-15T10:52:36.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 2000
+      },
+      "name": "R0002939",
+      "filename": "R0002939.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-05-15T10:55:24.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 1000
+      },
+      "name": "R0002955",
+      "filename": "R0002955.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-05-15T11:12:24.000Z",
+        "shutter": 0.002,
+        "aperture": 8,
+        "iso": 1000
+      },
+      "name": "R0003025",
+      "filename": "R0003025.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-06T12:18:06.000Z",
+        "shutter": 0.0008,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "R0003095",
+      "filename": "R0003095.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-06T12:23:49.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003099",
+      "filename": "R0003099.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-24T14:47:26.000Z",
+        "shutter": 0.008,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003112",
+      "filename": "R0003112.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-24T15:21:59.000Z",
+        "shutter": 0.000625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003129",
+      "filename": "R0003129.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-24T15:22:38.000Z",
+        "shutter": 0.0015625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003134",
+      "filename": "R0003134.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-24T15:46:05.000Z",
+        "shutter": 0.003125,
+        "aperture": 5.6,
+        "iso": 200
+      },
+      "name": "R0003143",
+      "filename": "R0003143.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-30T15:58:01.000Z",
+        "shutter": 0.008,
+        "aperture": 8,
+        "iso": 250
+      },
+      "name": "R0003174",
+      "filename": "R0003174.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-07-30T16:13:18.000Z",
+        "shutter": 0.008,
+        "aperture": 8,
+        "iso": 160
+      },
+      "name": "R0003179",
+      "filename": "R0003179.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-08-02T13:57:16.000Z",
+        "shutter": 0.008,
+        "aperture": 8,
+        "iso": 100
+      },
+      "name": "R0003184",
+      "filename": "R0003184.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-08-02T13:57:36.000Z",
+        "shutter": 0.005,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003189",
+      "filename": "R0003189.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-08-12T10:10:41.000Z",
+        "shutter": 0.008,
+        "aperture": 2.8,
+        "iso": 200
+      },
+      "name": "R0003211",
+      "filename": "R0003211.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-08-16T14:20:08.000Z",
+        "shutter": 0.0008,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003257",
+      "filename": "R0003257.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-08-16T14:24:14.000Z",
+        "shutter": 0.001,
+        "aperture": 4.5,
+        "iso": 100
+      },
+      "name": "R0003267",
+      "filename": "R0003267.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-08-16T15:16:24.000Z",
+        "shutter": 0.004,
+        "aperture": 14,
+        "iso": 100
+      },
+      "name": "R0003297",
+      "filename": "R0003297.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-09-06T09:36:02.000Z",
+        "shutter": 0.0005,
+        "aperture": 2.8,
+        "iso": 100
+      },
+      "name": "R0003477",
+      "filename": "R0003477.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-09-13T09:28:54.000Z",
+        "shutter": 0.00125,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003481",
+      "filename": "R0003481.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-09-13T09:29:49.000Z",
+        "shutter": 0.002,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003488",
+      "filename": "R0003488.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-09-18T19:14:59.000Z",
+        "shutter": 0.008,
+        "aperture": 2.8,
+        "iso": 640
+      },
+      "name": "R0003655",
+      "filename": "R0003655.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-09-18T19:28:51.000Z",
+        "shutter": 0.008,
+        "aperture": 2.8,
+        "iso": 640
+      },
+      "name": "R0003659",
+      "filename": "R0003659.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-09-25T13:10:49.000Z",
+        "shutter": 0.0025,
+        "aperture": 6.3,
+        "iso": 100
+      },
+      "name": "R0003677",
+      "filename": "R0003677.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-09-25T13:12:31.000Z",
+        "shutter": 0.0025,
+        "aperture": 6.3,
+        "iso": 100
+      },
+      "name": "R0003688",
+      "filename": "R0003688.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-10-22T22:01:46.000Z",
+        "shutter": 0.01,
+        "aperture": 8,
+        "iso": 6400
+      },
+      "name": "R0003949",
+      "filename": "R0003949.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-11-07T11:14:11.000Z",
+        "shutter": 0.000625,
+        "aperture": 5.6,
+        "iso": 100
+      },
+      "name": "R0003981",
+      "filename": "R0003981.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-11-07T11:22:10.000Z",
+        "shutter": 0.002,
+        "aperture": 8,
+        "iso": 200
+      },
+      "name": "R0004005",
+      "filename": "R0004005.jpg"
+    },
+    {
+      "exif": {
+        "camera": "RICOH GR III",
+        "created": "2021-11-07T11:32:08.000Z",
+        "shutter": 0.002,
+        "aperture": 8,
+        "iso": 100
+      },
+      "name": "R0004029",
+      "filename": "R0004029.jpg"
+    }
+  ]
+}
