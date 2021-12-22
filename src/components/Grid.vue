@@ -59,7 +59,7 @@ ul {
 li {
   height: 40vh;
   flex-grow: 1;
-  padding: 5px;
+  padding: 2px;
 }
 
 li:last-child {
@@ -68,7 +68,7 @@ li:last-child {
 }
 
 img {
-  max-height: 100%;
+  height: 100%;
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;

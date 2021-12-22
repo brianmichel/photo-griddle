@@ -9,10 +9,18 @@ export default reactive({
   async loadPhotos() {
     if (!this.isLoaded) {
 
-      for (const photo of manifest.photos) {
-        this.photos.push(photo)
-        this.photosByName.set(photo.name, photo)
+      const comparator = function (first: Photo, second: Photo) {
+        const a = first.exif.created ?? ""
+        const b = second.exif.created ?? ""
+
+        return a < b ? 1 : (a === b ? 0 : -1);
       }
+
+      this.photos = manifest.photos.sort(comparator)
+
+      this.photos.forEach((photo) => {
+        this.photosByName.set(photo.name, photo)
+      })
 
       this.isLoaded = true;
     }

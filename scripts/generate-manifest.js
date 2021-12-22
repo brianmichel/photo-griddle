@@ -3,6 +3,7 @@ const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
 const exif = require('exif-reader')
+const exifr = require('exifreader')
 const util = require('util')
 
 const config = JSON.parse(fs.readFileSync("./manifest-config.json"))
@@ -14,6 +15,7 @@ const output = path.join(config['output-directory'])
 async function metadata(filename) {
   const buffer = await sharp(filename).metadata()
   const decoded = exif(buffer.exif)
+
   return decoded
 }
 
@@ -39,9 +41,6 @@ async function resize(filename, output) {
         })
         .toFile(size.path)
     }))
-    .then(values => {
-      console.log(values)
-    })
 }
 
 async function processPhoto(filename) {
@@ -55,7 +54,14 @@ async function processPhoto(filename) {
   const decoded = await metadata(filename)
 
   photo.exif.camera = decoded.image.Model
-  photo.exif.created = decoded.exif.DateTimeOriginal
+  // TODO: exif-reader doesn't seem to read the hasselblad data.
+  // Maybe switch to https://www.npmjs.com/package/exifreader 
+  if (decoded.exif.DateTimeOriginal !== null) {
+    photo.exif.created = decoded.exif.DateTimeOriginal
+  } else {
+    const tags = await exifr.load(filename);
+    photo.exif.created = tags['DateTimeOriginal'].description
+  }
   photo.exif.shutter = decoded.exif.ExposureTime
   photo.exif.aperture = decoded.exif.FNumber
   photo.exif.iso = decoded.exif.ISO
@@ -74,7 +80,6 @@ async function processPhoto(filename) {
 
   for (const file of files) {
     let jsonPhoto = await processPhoto(file)
-    console.log(jsonPhoto)
     manifest.photos.push(jsonPhoto)
     resize(file, outputDirectory)
   }
