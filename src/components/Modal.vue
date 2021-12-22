@@ -22,8 +22,8 @@
 }
 
 .modal-content {
-  width: 75%;
-  max-width: 75%;
+  /* width: 75%;
+  max-width: 75%; */
   margin: auto;
 }
 </style>
