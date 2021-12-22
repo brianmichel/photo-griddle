@@ -2,7 +2,7 @@
   <div class="media-container">
     <img :src="this.details.url" />
     <div class="metadata">
-      <p class="item">{{ this.details.shutter }} seconds</p>
+      <p class="item">{{ this.details.shutter }}s</p>
       <p class="item">ƒ/{{ this.details.aperture }}</p>
       <p class="item">ISO {{ this.details.iso }}</p>
     </div>
@@ -27,10 +27,10 @@ export default defineComponent({
 <style scoped lang="scss">
 .media-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 img {
@@ -42,19 +42,16 @@ img {
 }
 
 .metadata {
-  width: 50%;
   display: flex;
-  max-width: 75vh;
-  margin-top: 2vh;
+  flex-direction: column;
   font-family: monospace;
-  justify-content: space-around;
-  align-items: center;
+  background-color: #fc0;
   border-radius: 1vh;
   -webkit-backdrop-filter: blur(5px); /* Safari 6.0 - 9.0 */
   backdrop-filter: blur(5px);
 
   .item {
-    color: #f2c53d;
+    color: black;
   }
 }
 
@@ -64,15 +61,15 @@ img {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .metadata {
-    background-color: rgba(49, 49, 49, 0.308);
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   .metadata {
+//     background-color: rgba(49, 49, 49, 0.308);
+//   }
+// }
 
-@media (prefers-color-scheme: light) {
-  .metadata {
-    background-color: rgba(255, 255, 255, 0.308);
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   .metadata {
+//     background-color: rgba(255, 255, 255, 0.308);
+//   }
+// }
 </style>
