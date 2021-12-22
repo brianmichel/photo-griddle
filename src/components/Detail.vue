@@ -2,9 +2,18 @@
   <div class="media-container">
     <img :src="this.details.url" />
     <div class="metadata">
-      <p class="item">{{ this.details.shutter }}s</p>
-      <p class="item">ƒ/{{ this.details.aperture }}</p>
-      <p class="item">ISO {{ this.details.iso }}</p>
+      <section>
+        <header>speed</header>
+        <p class="item">{{ this.details.shutter }}</p>
+      </section>
+      <section>
+        <header>aperture</header>
+        <p class="item">ƒ/{{ this.details.aperture }}</p>
+      </section>
+      <section>
+        <header>iso</header>
+        <p class="item">{{ this.details.iso }}</p>
+      </section>
     </div>
   </div>
 </template>
@@ -46,12 +55,34 @@ img {
   flex-direction: column;
   font-family: monospace;
   background-color: #fc0;
-  border-radius: 1vh;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
   -webkit-backdrop-filter: blur(5px); /* Safari 6.0 - 9.0 */
   backdrop-filter: blur(5px);
+  padding: 5px 10px 5px 10px;
+
+  section {
+    margin-bottom: 15px;
+  }
+
+  section:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  header {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8vh;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.2);
+  }
 
   .item {
     color: black;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.9vh;
   }
 }
 

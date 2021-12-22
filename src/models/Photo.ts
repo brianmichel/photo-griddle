@@ -1,5 +1,5 @@
 export interface Metadata {
-  shutter: number,
+  shutter: string,
   aperture: number,
   iso: number
 }

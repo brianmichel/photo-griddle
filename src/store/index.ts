@@ -15,7 +15,7 @@ export default reactive({
   },
   detailForPhoto(fileName: string) {
     return {
-      shutter: 0.25,
+      shutter: "1/250",
       aperture: 5.6,
       iso: 100,
       url: this.randomTestPhoto(),
