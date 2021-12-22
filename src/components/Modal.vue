@@ -10,6 +10,7 @@
 
 <style scoped>
 .modal-route {
+  animation: fadeIn 0.3s;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -21,9 +22,52 @@
   align-items: center;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal-content {
-  /* width: 75%;
-  max-width: 75%; */
   margin: auto;
 }
 </style>

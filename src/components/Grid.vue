@@ -2,10 +2,8 @@
   <div>
     <ul>
       <li v-for="image in images" :key="image.url">
-        <router-link
-          :to="{ name: 'detail', params: { filename: image.filename } }"
-        >
-          <img :src="image.url" loading="lazy" />
+        <router-link :to="{ name: 'detail', params: { filename: image.name } }">
+          <img :src="'/media/' + image.name + '_thumb.jpg'" loading="lazy" />
         </router-link>
       </li>
     </ul>
@@ -61,7 +59,7 @@ ul {
 li {
   height: 40vh;
   flex-grow: 1;
-  padding: 5px;
+  padding: 2px;
 }
 
 li:last-child {
@@ -70,7 +68,7 @@ li:last-child {
 }
 
 img {
-  max-height: 100%;
+  height: 100%;
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
