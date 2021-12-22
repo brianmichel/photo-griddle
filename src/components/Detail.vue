@@ -1,18 +1,18 @@
 <template>
   <div class="media-container">
-    <img :src="this.details.url" />
+    <img :src="'/media/' + this.photo.name + '_preview.jpg'" />
     <div class="metadata">
       <section>
         <header>speed</header>
-        <p class="item">{{ this.details.shutter }}</p>
+        <p class="item">{{ this.photo.exif.shutter }}</p>
       </section>
       <section>
         <header>aperture</header>
-        <p class="item">ƒ/{{ this.details.aperture }}</p>
+        <p class="item">ƒ/{{ this.photo.exif.aperture }}</p>
       </section>
       <section>
         <header>iso</header>
-        <p class="item">{{ this.details.iso }}</p>
+        <p class="item">{{ this.photo.exif.iso }}</p>
       </section>
     </div>
   </div>
@@ -25,8 +25,8 @@ export default defineComponent({
   name: "Detail",
   inject: ['store'],
   computed: {
-    details() {
-      return this.store.detailForPhoto(this.$route.params.name);
+    photo() {
+      return this.store.photoForName(this.$route.params.filename);;
     },
   },
   components: {},
@@ -45,8 +45,8 @@ export default defineComponent({
 img {
   height: 100%;
   width: 100%;
-  max-height: 75vh;
-  max-width: 75vh;
+  max-height: 95vh;
+  max-width: 120vh;
   object-fit: contain;
 }
 

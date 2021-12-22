@@ -2,9 +2,7 @@
   <div>
     <ul>
       <li v-for="image in images" :key="image.url">
-        <router-link
-          :to="{ name: 'detail', params: { filename: image.filename } }"
-        >
+        <router-link :to="{ name: 'detail', params: { filename: image.name } }">
           <img :src="'/media/' + image.name + '_thumb.jpg'" loading="lazy" />
         </router-link>
       </li>
