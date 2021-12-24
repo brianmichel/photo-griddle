@@ -2,21 +2,44 @@ const sharp = require('sharp')
 const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
-const exif = require('exif-reader')
-const exifr = require('exifreader')
+const exif = require('exifreader')
 const util = require('util')
 
 const config = JSON.parse(fs.readFileSync("./manifest-config.json"))
 
 // TODO: Using ~ in the path doesn't expand, how do I fix this without another library?
 const input = path.join(config['input-directory'], '*.jpg')
-const output = path.join(config['output-directory'])
+const photoDestination = path.join(config['photo-output-directory'])
+const manifestDestination = path.join(config['manifest-output-directory'])
 
 async function metadata(filename) {
-  const buffer = await sharp(filename).metadata()
-  const decoded = exif(buffer.exif)
+  let data = {}
 
-  return decoded
+  const tags = await exif.load(filename);
+
+  data.camera = tags['Model'].description
+  data.created = tags['DateCreated'].description
+
+  const aperture = tags['FNumber']
+  data.aperture = '-'
+  if (aperture !== undefined && aperture.value.length == 2) {
+    data.aperture = `${aperture.value[0] / aperture.value[1]}`
+  }
+
+
+  const shutter = tags['ExposureTime']
+  data.shutter = '-'
+  if (shutter !== undefined && shutter.value.length == 2) {
+    data.shutter = `${shutter.value[0]}/${shutter.value[1]}`
+  }
+
+  const iso = tags['ISOSpeedRatings']
+  data.iso = '-'
+  if (iso !== undefined) {
+    data.iso = `${iso.value}`
+  }
+
+  return data
 }
 
 async function resize(filename, output) {
@@ -47,30 +70,18 @@ async function processPhoto(filename) {
   let photo = {
     exif: {}
   }
+
   const filePath = path.parse(filename)
   photo.name = filePath.name
   photo.filename = filePath.base
+  photo.exif = await metadata(filename)
 
-  const decoded = await metadata(filename)
-
-  photo.exif.camera = decoded.image.Model
-  // TODO: exif-reader doesn't seem to read the hasselblad data.
-  // Maybe switch to https://www.npmjs.com/package/exifreader 
-  if (decoded.exif.DateTimeOriginal !== null) {
-    photo.exif.created = decoded.exif.DateTimeOriginal
-  } else {
-    const tags = await exifr.load(filename);
-    photo.exif.created = tags['DateTimeOriginal'].description
-  }
-  photo.exif.shutter = decoded.exif.ExposureTime
-  photo.exif.aperture = decoded.exif.FNumber
-  photo.exif.iso = decoded.exif.ISO
   return photo
 }
 
-(async function generate(inputDirectory, outputDirectory) {
+(async function generate(inputDirectory, photoOutput, manifestOutput) {
   const files = glob.sync(inputDirectory)
-  fs.mkdirSync(outputDirectory, { recursive: true })
+  fs.mkdirSync(photoOutput, { recursive: true })
 
   let manifest = {
     generated: Date.now(),
@@ -81,9 +92,9 @@ async function processPhoto(filename) {
   for (const file of files) {
     let jsonPhoto = await processPhoto(file)
     manifest.photos.push(jsonPhoto)
-    resize(file, outputDirectory)
+    resize(file, photoOutput)
   }
 
   const json = JSON.stringify(manifest)
-  fs.writeFileSync(path.join(outputDirectory, 'manifest.json'), json, 'utf-8')
-})(input, output)
+  fs.writeFileSync(path.join(manifestOutput, 'manifest.json'), json, 'utf-8')
+})(input, photoDestination, manifestDestination)
