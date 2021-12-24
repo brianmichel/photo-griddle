@@ -1,5 +1,5 @@
 {
-  "input-directory": "/Users/brianmichel/Desktop/photos",
+  "input-directory": "./photos",
   "photo-output-directory": "./public/media",
   "manifest-output-directory": "./src/assets",
   "generate-dominant-color": false
