@@ -33,7 +33,6 @@ export default defineComponent({
 
 img {
   height: 100%;
-  width: 100%;
   max-height: 90vh;
   max-width: 130vh;
   object-fit: contain;
