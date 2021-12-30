@@ -12,6 +12,12 @@ const input = path.join(config['input-directory'], '*.jpg')
 const photoDestination = path.join(config['photo-output-directory'])
 const manifestDestination = path.join(config['manifest-output-directory'])
 
+/**
+ * Read selective metadata out of a photo's EXIF tag (if possible).
+ *
+ * @param string filename The filename of the photo to extract metadata from if possible.
+ * @returns An object with keys detailing various pieces of metadata for the photo. 
+ */
 async function metadata(filename) {
   let data = {}
 
@@ -42,30 +48,51 @@ async function metadata(filename) {
   return data
 }
 
+/**
+ * Resize a given file path to the desired dimensions
+ *
+ * @param string filename The filename that should be resized (this should point to an jpeg)
+ * @param string output The directory in which to output the resizes.
+ */
 async function resize(filename, output) {
   const filePath = path.parse(filename)
 
   const sizes = [
     {
+      name: 'preview',
       path: path.join(output, `${filePath.name}_preview.jpg`),
       dimension: 2000
     },
     {
+      name: 'thumb',
       path: path.join(output, `${filePath.name}_thumb.jpg`),
       dimension: 400
     }
   ]
 
-  Promise
+
+  return Promise
     .all(sizes.map((size) => {
       return sharp(filename)
         .resize(size.dimension, null, {
           kernel: sharp.kernel.lanczos3
         })
         .toFile(size.path)
+        .then(value => {
+          return {
+            name: size.name,
+            ...value
+          }
+        })
     }))
 }
 
+/**
+ * Begin the generation process for a jpeg at `filename`.
+ *
+ * @param string filename The full filename of a photo that should be processed.
+ * @returns
+ */
 async function processPhoto(filename) {
   let photo = {
     exif: {}
@@ -79,6 +106,15 @@ async function processPhoto(filename) {
   return photo
 }
 
+/**
+ *  The main entry point for the manifest generation. 
+ * 
+ * @param string inputDirectory The input directory to read the source photos from.
+ * @param string photoOutput The directory in which to place the processed photos.
+ * @param string manifestOutput The directory in which to place the manifest file.
+ * 
+ * @note This is called with the weird format to allow for it to be marked as async.
+ */
 (async function generate(inputDirectory, photoOutput, manifestOutput) {
   const files = glob.sync(inputDirectory)
   fs.mkdirSync(photoOutput, { recursive: true })
@@ -89,10 +125,15 @@ async function processPhoto(filename) {
     photos: []
   }
 
-  for (const file of files) {
+  const totalFiles = files.length
+
+  for (const [index, file] of files.entries()) {
+    console.info(`(${index + 1} / ${totalFiles}) Processing file: ${file}...`)
     let jsonPhoto = await processPhoto(file)
+    const resizes = await resize(file, photoOutput)
+    let mapped = resizes.map(item => ({ [item.name]: { width: item.width, height: item.height } }))
+    jsonPhoto.sizes = Object.assign({}, ...mapped)
     manifest.photos.push(jsonPhoto)
-    resize(file, photoOutput)
   }
 
   const json = JSON.stringify(manifest)
