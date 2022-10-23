@@ -9,7 +9,7 @@
     </ul>
 
     <router-view>
-      <Modal v-if="showModal" @click="$router.go(-1)">
+      <Modal v-if="showModal" @click="dismiss()">
         <Detail />
       </Modal>
     </router-view>
@@ -29,6 +29,11 @@ export default defineComponent({
   components: {
     Detail,
     Modal,
+  },
+  methods: {
+    dismiss() {
+      this.showModal = false;
+    },
   },
   watch: {
     $route(newVal) {

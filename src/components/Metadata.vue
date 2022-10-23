@@ -35,6 +35,7 @@ export default defineComponent({
 .metadata {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-family: monospace;
   background-color: rgba(255, 204, 0, 0.804);
@@ -42,7 +43,9 @@ export default defineComponent({
   -webkit-backdrop-filter: blur(5px); /* Safari 6.0 - 9.0 */
   backdrop-filter: blur(5px);
   padding: 10px;
-
+  padding-left: auto;
+  padding-right: auto;
+  width: 70%;
   header {
     font-family: sans-serif;
     text-transform: uppercase;
@@ -51,7 +54,6 @@ export default defineComponent({
     margin: 0px;
     color: rgba(0, 0, 0, 0.2);
   }
-
   .item {
     margin: 0px;
     font-weight: bold;
