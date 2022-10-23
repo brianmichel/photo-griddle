@@ -66,7 +66,7 @@ async function resize(filename, output) {
     {
       name: 'thumb',
       path: path.join(output, `${filePath.name}_thumb.jpg`),
-      dimension: 400
+      dimension: 600
     }
   ]
 
@@ -75,7 +75,8 @@ async function resize(filename, output) {
     .all(sizes.map((size) => {
       return sharp(filename)
         .resize(size.dimension, null, {
-          kernel: sharp.kernel.lanczos3
+          kernel: sharp.kernel.lanczos3,
+          fit: sharp.fit.outside
         })
         .toFile(size.path)
         .then(value => {
