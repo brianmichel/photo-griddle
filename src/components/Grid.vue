@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li v-for="image in images" :key="image.url">
+      <li v-for="image in images" :key="image.filename">
         <router-link :to="{ name: 'detail', params: { filename: image.name } }">
           <img :src="'/media/' + image.name + '_thumb.jpg'" loading="lazy" />
         </router-link>
@@ -9,7 +9,7 @@
     </ul>
 
     <router-view>
-      <Modal v-if="showModal" @click="dismiss()">
+      <Modal v-if="showModal" @click="dismiss">
         <Detail />
       </Modal>
     </router-view>
@@ -17,14 +17,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, PropType } from "vue";
 import Detail from "@/components/Detail.vue";
 import Modal from "@/components/Modal.vue";
+import { Photo } from "@/models/Photo";
 
 export default defineComponent({
   name: "Grid",
   props: {
-    images: Array,
+    images: Array as PropType<Array<Photo>>,
   },
   components: {
     Detail,
@@ -33,6 +34,11 @@ export default defineComponent({
   methods: {
     dismiss() {
       this.showModal = false;
+    },
+    listener(event: KeyboardEvent) {
+      if (this.showModal && event.code.toLocaleLowerCase() === "escape") {
+        this.dismiss();
+      }
     },
   },
   watch: {
@@ -44,6 +50,12 @@ export default defineComponent({
     return {
       showModal: false,
     };
+  },
+  mounted() {
+    document.addEventListener("keydown", this.listener);
+  },
+  unmounted() {
+    document.removeEventListener("keydown", this.listener);
   },
 });
 </script>
@@ -58,7 +70,7 @@ ul {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0px;
-  margin: 0px;
+  margin: 3px;
 }
 
 li {

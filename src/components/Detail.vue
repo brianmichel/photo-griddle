@@ -31,8 +31,8 @@ export default defineComponent({
 img {
   height: 100%;
   max-height: 90vh;
-  max-width: 130vh;
+  max-width: 100%;
   object-fit: contain;
-  padding-bottom: 1vh;
+  margin: 10px;
 }
 </style>
