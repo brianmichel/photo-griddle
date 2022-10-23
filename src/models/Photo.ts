@@ -1,4 +1,3 @@
-
 export interface Exif {
   /**
    * The camera model that created the photo.
@@ -6,7 +5,7 @@ export interface Exif {
    * @type {(string | null)}
    * @memberof Exif
    */
-  camera?: string | null
+  camera?: string | null;
 
   /**
    * The date on which the photo was create by the camera.
@@ -14,7 +13,7 @@ export interface Exif {
    * @type {(string | null)}
    * @memberof Exif
    */
-  created?: string | null
+  created?: string | null;
 
   /**
    * The shutter speed of the captured photo.
@@ -23,7 +22,7 @@ export interface Exif {
    * @type {string}
    * @memberof Exif
    */
-  shutter: string
+  shutter: string;
 
   /**
    * The aperture of the lens when the image was captured.
@@ -31,7 +30,7 @@ export interface Exif {
    * @type {string}
    * @memberof Exif
    */
-  aperture: string
+  aperture: string;
 
   /**
    * The digital sensor sensitivity of the camera when the image was captured.
@@ -39,18 +38,17 @@ export interface Exif {
    * @type {string}
    * @memberof Exif
    */
-  iso: string
+  iso: string;
 }
 
 export interface Photo {
-
   /**
    * The metadata of the image.
    *
    * @type {Exif}
    * @memberof Photo
    */
-  exif: Exif
+  exif: Exif;
 
   /**
    * The name of the image without a file extension.
@@ -58,7 +56,7 @@ export interface Photo {
    * @type {string}
    * @memberof Photo
    */
-  name: string
+  name: string;
 
   /**
    * The name of the file followed by the extension.
@@ -66,5 +64,5 @@ export interface Photo {
    * @type {string}
    * @memberof Photo
    */
-  filename: string
+  filename: string;
 }
