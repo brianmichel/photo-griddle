@@ -1,5 +1,5 @@
 <template>
-  <div class="media-container">
+  <div class="media-container" :style="dimensions">
     <img :src="'/media/' + photo.name + '_preview.jpg'" />
   </div>
 </template>
@@ -12,8 +12,18 @@ export default defineComponent({
   inject: ['store'],
   computed: {
     photo() {
-      return this.store.photoForName(this.$route.params.filename);;
+      return this.store.photoForName(this.$route.params.filename);
     },
+    dimensions() {
+      return {
+        "--image-aspect-ratio":
+          this.photo.sizes.preview.width +
+          " / " +
+          this.photo.sizes.preview.height,
+        "--image-height": this.photo.sizes.preview.height + "px",
+        "--image-width": this.photo.sizes.preview.width + "px",
+      };
+    }
   },
   components: {
   },
@@ -22,6 +32,7 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .media-container {
+  aspect-ratio: var(--image-aspect-ratio);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,5 +45,6 @@ img {
   max-width: 100%;
   object-fit: contain;
   margin: 10px;
+  aspect-ratio: var(--image-aspect-ratio);
 }
 </style>
