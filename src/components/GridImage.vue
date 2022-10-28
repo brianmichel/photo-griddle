@@ -55,8 +55,10 @@ img {
   border-radius: 5px;
 }
 
-li:hover {
-  transform: scale(0.98);
+@media(hover: hover) {
+  li:hover {
+    transform: scale(0.98);
+  }
 }
 
 // Portrait

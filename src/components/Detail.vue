@@ -40,11 +40,9 @@ export default defineComponent({
 }
 
 img {
-  height: 100%;
   max-height: 90vh;
   max-width: 100%;
   object-fit: contain;
   margin: 10px;
-  aspect-ratio: var(--image-aspect-ratio);
 }
 </style>
