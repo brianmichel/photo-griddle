@@ -6,11 +6,9 @@
       </template>
     </ul>
 
-    <router-view>
-      <Modal v-if="showModal" @click="dismiss">
-        <Detail />
-      </Modal>
-    </router-view>
+    <Modal v-if="showModal" @click="dismiss">
+      <Detail />
+    </Modal>
   </div>
 </template>
 

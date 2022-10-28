@@ -1,10 +1,9 @@
 <template>
-  <Home />
+  <router-view />
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted } from "vue";
-import Home from "./components/Home.vue";
 import store from "@/store";
 
 export default defineComponent({
@@ -15,7 +14,7 @@ export default defineComponent({
   },
   name: "App",
   components: {
-    Home,
+    // Home,
   },
   setup() {
     onMounted(async () => {
@@ -32,6 +31,7 @@ export default defineComponent({
   padding: 0px;
   margin: 0px;
 }
+
 html,
 body {
   padding: 0;
@@ -41,12 +41,14 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
+    color: white;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
     background-color: white;
+    color: black;
   }
 }
 </style>
