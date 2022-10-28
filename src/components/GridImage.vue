@@ -39,7 +39,7 @@ li {
   margin: 3px;
   background-color: rgba(170, 170, 170, 0.3);
   border-radius: 5px;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease-in-out;
 }
 
 li:last-child {
