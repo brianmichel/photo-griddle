@@ -14,7 +14,6 @@ export default defineComponent({
   },
   name: "App",
   components: {
-    // Home,
   },
   setup() {
     onMounted(async () => {

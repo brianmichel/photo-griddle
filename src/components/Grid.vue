@@ -6,9 +6,12 @@
       </template>
     </ul>
 
-    <Modal v-if="showModal" @click="dismiss">
-      <Detail />
-    </Modal>
+
+    <router-view>
+      <Modal v-if="showModal" @click="dismiss">
+        <Detail />
+      </Modal>
+    </router-view>
   </div>
 </template>
 
@@ -31,6 +34,7 @@ export default defineComponent({
   },
   methods: {
     dismiss() {
+      this.$router.push({ name: "home" })
       this.showModal = false;
     },
     listener(event: KeyboardEvent) {
@@ -75,7 +79,7 @@ ul {
 
 // Smaller screens in portrait
 
-@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+@media (max-aspect-ratio: 1/1) and (max-width: 425px) {
   ul {
     flex-direction: row;
   }
@@ -87,7 +91,7 @@ ul {
 
   img {
     width: 100%;
-    max-height: 75vh;
+    max-height: 55vh;
     min-width: 0;
   }
 }
