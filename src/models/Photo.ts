@@ -65,4 +65,19 @@ export interface Photo {
    * @memberof Photo
    */
   filename: string;
+
+  /**
+   * The different sizes that have been created as part of the resizing for this process.
+   *
+   * @type {Object}
+   */
+  sizes: {
+    preview: Resize;
+    thumb: Resize;
+  };
 }
+
+type Resize = {
+  width: number;
+  height: number;
+};

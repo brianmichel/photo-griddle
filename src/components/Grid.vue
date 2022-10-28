@@ -1,11 +1,9 @@
 <template>
   <div>
     <ul>
-      <li v-for="image in images" :key="image.filename">
-        <router-link :to="{ name: 'detail', params: { filename: image.name } }">
-          <img :src="'/media/' + image.name + '_thumb.jpg'" loading="lazy" />
-        </router-link>
-      </li>
+      <template v-for="image in images" :key="image.filename">
+        <GridImage :image="image" />
+      </template>
     </ul>
 
     <router-view>
@@ -20,6 +18,7 @@
 import { defineComponent, PropType } from "vue";
 import Detail from "@/components/Detail.vue";
 import Modal from "@/components/Modal.vue";
+import GridImage from "@/components/GridImage.vue";
 import { Photo } from "@/models/Photo";
 
 export default defineComponent({
@@ -30,6 +29,7 @@ export default defineComponent({
   components: {
     Detail,
     Modal,
+    GridImage,
   },
   methods: {
     dismiss() {
@@ -73,42 +73,7 @@ ul {
   margin: 3px;
 }
 
-li {
-  height: 40vh;
-  flex-grow: 1;
-  padding: 2px;
-}
-
-li:last-child {
-  // There's no science in using "10" here. In all my testing, this delivered the best results.
-  flex-grow: 10;
-}
-
-img {
-  height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  vertical-align: bottom;
-  border-radius: 5px;
-}
-
 // ADVANCED
-
-// Portrait
-
-@media (max-aspect-ratio: 1/1) {
-  li {
-    height: 30vh;
-  }
-}
-
-// Short screens
-
-@media (max-height: 480px) {
-  li {
-    height: 80vh;
-  }
-}
 
 // Smaller screens in portrait
 
@@ -121,6 +86,7 @@ img {
     height: auto;
     width: 100%;
   }
+
   img {
     width: 100%;
     max-height: 75vh;

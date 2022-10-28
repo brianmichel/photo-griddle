@@ -1,6 +1,6 @@
 <template>
   <div class="media-container">
-    <img :src="'/media/' + this.photo.name + '_preview.jpg'" />
+    <img :src="'/media/' + photo.name + '_preview.jpg'" />
   </div>
 </template>
 
