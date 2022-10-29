@@ -22,16 +22,24 @@ async function metadata(filename) {
   let data = {}
 
   const tags = await exif.load(filename);
+  const camera = tags['Model']
+  data.camera = '-'
+  if (camera !== undefined) {
+    data.camera = camera.description
+  }
 
-  data.camera = tags['Model'].description
-  data.created = tags['DateCreated'].description
+  const created = tags['DateCreated']
+  data.created = new Date().toJSON()
+  if (created !== undefined) {
+    data.created = created.description
+    console.log(created.description)
+  }
 
   const aperture = tags['FNumber']
   data.aperture = '-'
   if (aperture !== undefined && aperture.value.length == 2) {
     data.aperture = `${aperture.value[0] / aperture.value[1]}`
   }
-
 
   const shutter = tags['ExposureTime']
   data.shutter = '-'
