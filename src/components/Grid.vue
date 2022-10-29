@@ -50,7 +50,7 @@ export default defineComponent({
   },
   data() {
     return {
-      showModal: false,
+      showModal: this.$route.meta.showModal,
     };
   },
   mounted() {
