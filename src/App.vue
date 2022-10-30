@@ -37,9 +37,22 @@ body {
   margin: 0;
 }
 
+a,
+p,
+h1,
+h2,
+h2,
+span {
+  font-family: "BebasNeue", sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
+    color: white;
+  }
+
+  *:visited {
     color: white;
   }
 }
@@ -49,5 +62,14 @@ body {
     background-color: white;
     color: black;
   }
+
+  *:visited {
+    color: black;
+  }
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("assets/fonts/BebasNeue-Regular.ttf") format("truetype");
 }
 </style>

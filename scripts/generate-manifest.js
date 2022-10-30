@@ -5,12 +5,12 @@ const glob = require('glob')
 const exif = require('exifreader')
 const util = require('util')
 
-const config = JSON.parse(fs.readFileSync("./manifest-config.json"))
+const config = JSON.parse(fs.readFileSync("./src/assets/website-config.json")).manifest_generation
 
 // TODO: Using ~ in the path doesn't expand, how do I fix this without another library?
-const input = path.join(config['input-directory'], '*.jpg')
-const photoDestination = path.join(config['photo-output-directory'])
-const manifestDestination = path.join(config['manifest-output-directory'])
+const input = path.join(config.input_directory, '*.jpg')
+const photoDestination = path.join(config.photo_output_directory)
+const manifestDestination = path.join(config.manifest_output_directory)
 
 /**
  * Read selective metadata out of a photo's EXIF tag (if possible).

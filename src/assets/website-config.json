@@ -1,0 +1,11 @@
+{
+  "author": {
+    "name": "@brianmichel",
+    "twitter": "https://www.twitter.com/brianmichel"
+  },
+  "manifest_generation": {
+    "input_directory": "./photos",
+    "photo_output_directory": "./public/media",
+    "manifest_output_directory": "./src/assets"
+  }
+}

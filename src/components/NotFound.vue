@@ -27,7 +27,7 @@ export default defineComponent({
 }
 
 .copy {
-  font-family: monospace;
+  font-family: "BebasNeue";
   font-size: 1.5rem;
   font-weight: bold;
   display: flex;
