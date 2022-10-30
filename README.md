@@ -1,6 +1,6 @@
 # photo-griddle
 
-A small SPA to serve a resonsive grid of photos that are all local to the application itself. This application is very minimally configurable, but serves the needs of the author quite well.
+A small SPA to serve a responsive grid of photos that are all local to the application itself. This application is very minimally configurable, but serves the needs of the author quite well.
 
 ![](/readme-images/site.png)
 
