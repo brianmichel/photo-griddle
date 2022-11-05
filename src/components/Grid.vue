@@ -6,7 +6,6 @@
       </template>
     </ul>
 
-
     <router-view>
       <Modal v-if="showModal" @click="dismiss">
         <Detail />
@@ -34,7 +33,7 @@ export default defineComponent({
   },
   methods: {
     dismiss() {
-      this.$router.push({ name: "home" })
+      this.$router.push({ name: "home" });
       this.showModal = false;
     },
     listener(event: KeyboardEvent) {

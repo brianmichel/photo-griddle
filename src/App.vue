@@ -13,8 +13,7 @@ export default defineComponent({
     };
   },
   name: "App",
-  components: {
-  },
+  components: {},
   setup() {
     onMounted(async () => {
       store.loadPhotos();

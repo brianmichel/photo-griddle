@@ -55,7 +55,7 @@ img {
   border-radius: 5px;
 }
 
-@media(hover: hover) {
+@media (hover: hover) {
   li:hover {
     transform: scale(0.98);
   }
