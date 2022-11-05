@@ -7,7 +7,7 @@
           by <a class="media-link" :href="twitter" target="blank">{{ name }}</a>
         </span>
       </div>
-      <img src="assets/camera.svg" alt="Futuristic Camera" />
+      <CameraIcon class="cameraIcon" aria-label="A beautiful, futuristic camera." />
     </header>
     <section>
       <Grid :images="this.store.photos" />
@@ -21,6 +21,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Grid from "@/components/Grid.vue";
+import CameraIcon from "@/components/CameraIcon.vue";
 import config from "@/assets/website-config.json";
 
 export default defineComponent({
@@ -28,6 +29,7 @@ export default defineComponent({
   name: "Home",
   components: {
     Grid,
+    CameraIcon,
   },
   computed: {
     name() {
@@ -65,21 +67,26 @@ header {
     line-height: 0.75;
   }
 
-  img {
-    color: white;
+  .cameraIcon {
     width: 3rem;
+
+    @media (prefers-color-scheme: dark) {
+      fill: white;
+    }
+
+    @media (prefers-color-scheme: light) {
+      fill: black;
+    }
   }
 }
 
 .media-link {
   text-decoration: none;
   position: relative;
-  mix-blend-mode: difference;
 }
 
 .media-link::before {
   content: "";
-  background-color: rgba(252, 255, 61, 0.849);
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -87,9 +94,23 @@ header {
   height: 4px;
   z-index: -1;
   transition: all 0.3s ease-in-out;
+
+  @media (prefers-color-scheme: light) {
+    background-color: #ca8f11;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #fcff3dd8;
+  }
 }
 
 .media-link:hover::before {
-  background-color: red;
+  @media (prefers-color-scheme: light) {
+    background-color: #002c7d;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #5d07b3;
+  }
 }
 </style>

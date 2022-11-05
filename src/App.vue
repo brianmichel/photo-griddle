@@ -43,6 +43,14 @@ h2,
 h2,
 span {
   font-family: "BebasNeue", sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: black;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
