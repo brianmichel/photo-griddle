@@ -7,25 +7,27 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "@vue/runtime-core";
+import { defineComponent, PropType, computed } from "vue";
 import { Photo } from "@/models/Photo";
 
 export default defineComponent({
   name: "GridImage",
   props: {
-    image: Object as PropType<Photo>,
-  },
-  computed: {
-    dimensions() {
-      return {
-        "--image-aspect-ratio":
-          this.image?.sizes.thumb.width +
-          " / " +
-          this.image?.sizes.thumb.height,
-        "--image-width": this.image?.sizes.thumb.width + "px",
-        "--image-height": this.image?.sizes.thumb.height + "px",
-      };
+    image: {
+      type: Object as PropType<Photo>,
+      required: true,
     },
+  },
+  setup(props: { image: Photo }) {
+    const dimensions = computed(() => ({
+      "--image-aspect-ratio": `${props.image.sizes.thumb.width} / ${props.image.sizes.thumb.height}`,
+      "--image-width": `${props.image.sizes.thumb.width}px`,
+      "--image-height": `${props.image.sizes.thumb.height}px`,
+    }));
+
+    return {
+      dimensions,
+    };
   },
 });
 </script>

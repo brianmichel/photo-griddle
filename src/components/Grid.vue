@@ -7,28 +7,28 @@
     </ul>
 
     <router-view>
-      <Modal v-if="showModal" @click="dismiss">
-        <Detail />
-      </Modal>
+      <ModalView v-if="showModal" @click="dismiss">
+        <DetailView />
+      </ModalView>
     </router-view>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
-import Detail from "@/components/Detail.vue";
-import Modal from "@/components/Modal.vue";
+import DetailView from "@/components/DetailView.vue";
+import ModalView from "@/components/ModalView.vue";
 import GridImage from "@/components/GridImage.vue";
 import { Photo } from "@/models/Photo";
 
 export default defineComponent({
-  name: "Grid",
+  name: "GridView",
   props: {
     images: Array as PropType<Array<Photo>>,
   },
   components: {
-    Detail,
-    Modal,
+    DetailView,
+    ModalView,
     GridImage,
   },
   methods: {

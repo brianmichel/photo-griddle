@@ -8,7 +8,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Detail",
+  name: "DetailView",
   inject: ['store'],
   computed: {
     photo() {

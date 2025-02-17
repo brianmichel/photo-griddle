@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const exif = require("exifreader");
+/* eslint-enable @typescript-eslint/no-var-requires */
 
 const config = JSON.parse(
   fs.readFileSync("./src/assets/website-config.json")
@@ -17,7 +19,7 @@ const manifestDestination = path.join(config.manifest_output_directory);
  * Read selective metadata out of a photo's EXIF tag (if possible).
  *
  * @param string filename The filename of the photo to extract metadata from if possible.
- * @returns An object with keys detailing various pieces of metadata for the photo.
+ * @returns An object with keys .ing various pieces of metadata for the photo.
  */
 async function metadata(filename) {
   let data = {};

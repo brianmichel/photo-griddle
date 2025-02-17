@@ -7,10 +7,13 @@
           by <a class="media-link" :href="twitter" target="blank">{{ name }}</a>
         </span>
       </div>
-      <CameraIcon class="cameraIcon" aria-label="A beautiful, futuristic camera." />
+      <CameraIcon
+        class="cameraIcon"
+        aria-label="A beautiful, futuristic camera."
+      />
     </header>
     <section>
-      <Grid :images="this.store.photos" />
+      <Grid :images="store.photos" />
     </section>
     <footer>
       <p class="rights">All Rights Reserved {{ year }}</p>
@@ -26,7 +29,7 @@ import config from "@/assets/website-config.json";
 
 export default defineComponent({
   inject: ["store"],
-  name: "Home",
+  name: "HomePage",
   components: {
     Grid,
     CameraIcon,
